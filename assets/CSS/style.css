@@ -11,7 +11,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #1f2124;
-    background-color: #DDDDDDDD;
+    background-color: #fff;
 }
 
 .container {
@@ -80,6 +80,20 @@ header .menu .navigation .language img {
     object-fit: cover;
 }
 
+/* destaque */
+
+.destaque h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 750;
+    padding: 50px 0 40px 0;
+}
+
+.destaque img {
+    border-radius: 20px;
+}
+
 /* park */
 
 .park .container{
@@ -115,7 +129,8 @@ header .menu .navigation .language img {
     font-weight: 500;
     fill: #FFFFFF;
     color: #FFFFFF;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 /* conecte */
@@ -153,8 +168,21 @@ header .menu .navigation .language img {
 /* blog */
 
 .blog {
-    background-color: #e1d9d9;
+    background-color: #fafafa;
     padding: 50px 0px 50px 0px;
+}
+
+.blog .title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 750;
+    padding: 50px 0 20px 0;
+}
+
+.blog .publicacao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px #0000005a;
 }
 
 .blog .publicacao img {
@@ -199,14 +227,46 @@ header .menu .navigation .language img {
     color: #2d2d2d;
 }
 
-.video .publicacao:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px #0000005a;
+.blog a {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #2d2d2d;
+    border-radius: 10px;
+}
+
+.blog a:hover{
+    background-color: #eeeeee;
+}
+
+/* video */
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.publicacao img:hover {
+    transform: scale(1.2);
 }
 
 .video {
-    background-color: #e1d9d9;
+    background-color: #fff;
     padding: 50px 0px 50px 0px;
+}
+
+.video .title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 750;
+    padding: 50px 0 20px 0;
 }
 
 .video .publicacao img {
@@ -215,6 +275,7 @@ header .menu .navigation .language img {
     display: block !important;
     height: auto;
     object-fit: cover;
+    
 }
 
 .video .publicacoes {
@@ -227,13 +288,12 @@ header .menu .navigation .language img {
 
 .video .publicacao {
     flex: 1 1 0px !important;
-    min-width: 0 !important;
     flex-basis: 50%;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    transition: all 0.3s;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .video h2 {
@@ -245,15 +305,10 @@ header .menu .navigation .language img {
 }
 
 .video p {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 20px;
     color: #2d2d2d;
-}
-
-.video .publicacao:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px #0000005a;
 }
 
 
