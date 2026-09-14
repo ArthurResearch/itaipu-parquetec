@@ -189,8 +189,12 @@ header .menu .navigation .language img {
     width: 100% !important;
     max-width: 100% !important;
     display: block !important;
-    height: auto;
-    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.blog .publicacao img:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 20px 40px #0000005a;
 }
 
 .blog .publicacoes {
